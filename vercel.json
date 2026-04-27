@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "buildCommand": "bun run build",
+  "installCommand": "bun install",
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/assets/(.*)", "dest": "/dist/client/assets/$1" },
+    { "src": "/\\.well-known/(.*)", "dest": "/dist/client/.well-known/$1" },
+    { "src": "/(.*)", "dest": "/api/index.ts" }
+  ]
+}
