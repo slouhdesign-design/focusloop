@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { cpSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const serverPath = new URL("../dist/server/server.js", import.meta.url);
 const serverCode = readFileSync(serverPath, "utf8");
@@ -16,8 +16,14 @@ const replacement = `function getStartResponseHeaders(opts) {
   }));
 }`;
 
-if (!serverCode.includes(original)) {
+if (serverCode.includes(original)) {
+  writeFileSync(serverPath, serverCode.replace(original, replacement), "utf8");
+} else if (!serverCode.includes(replacement)) {
   throw new Error("Expected getStartResponseHeaders implementation was not found in dist/server/server.js");
 }
 
-writeFileSync(serverPath, serverCode.replace(original, replacement), "utf8");
+const clientAssetsPath = new URL("../dist/client/assets", import.meta.url);
+const publicAssetsPath = new URL("../public/assets", import.meta.url);
+
+mkdirSync(publicAssetsPath, { recursive: true });
+cpSync(clientAssetsPath, publicAssetsPath, { recursive: true, force: true });
