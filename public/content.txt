@@ -1,0 +1,14 @@
+# Website Content for AI/LLM Indexing
+
+Welcome to Focusloop!
+
+Focusloop is a calm Pomodoro timer for deep work, productivity, and intentional focus. Our features include:
+- Pomodoro timer
+- Focus sessions
+- Productivity blog
+- User authentication
+- Newsletter signup
+
+Explore our articles, blog, and productivity guides to master deep work and build better habits.
+
+Visit https://focusloop.app for more information.

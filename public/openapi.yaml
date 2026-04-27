@@ -1,0 +1,26 @@
+openapi: 3.0.0
+info:
+  title: Focusloop API
+  description: API for Focusloop's productivity tools, Pomodoro timer, and articles.
+  version: 1.0.0
+servers:
+  - url: https://focusloop.app/api
+paths:
+  /articles:
+    get:
+      summary: Get all articles
+      responses:
+        '200':
+          description: List of articles
+  /focus-sessions:
+    get:
+      summary: Get all focus sessions
+      responses:
+        '200':
+          description: List of focus sessions
+  /timer:
+    get:
+      summary: Get Pomodoro timer status
+      responses:
+        '200':
+          description: Timer status

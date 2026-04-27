@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Focusloop AI Plugin",
+  "name_for_model": "focusloop_ai_plugin",
+  "description_for_human": "Access Focusloop's productivity tools, articles, and Pomodoro timer via AI.",
+  "description_for_model": "Plugin for accessing Focusloop's Pomodoro timer, productivity blog, and user features. Provides endpoints for articles, focus sessions, and more.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://focusloop.app/openapi.yaml"
+  },
+  "logo_url": "https://focusloop.app/favicon.svg",
+  "contact_email": "support@focusloop.app",
+  "legal_info_url": "https://focusloop.app/terms"
+}

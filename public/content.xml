@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website>
+  <title>Focusloop</title>
+  <url>https://focusloop.app</url>
+  <description>Calm Pomodoro timer for deep work, productivity, and intentional focus.</description>
+  <features>
+    <feature>Pomodoro timer</feature>
+    <feature>Focus sessions</feature>
+    <feature>Productivity blog</feature>
+    <feature>User authentication</feature>
+    <feature>Newsletter signup</feature>
+  </features>
+  <callToAction>Explore our articles, blog, and productivity guides to master deep work and build better habits.</callToAction>
+</website>

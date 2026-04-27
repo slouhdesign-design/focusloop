@@ -1,0 +1,10 @@
+# focusloop.app - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://focusloop.app/sitemap.xml
+
+# Block unnecessary paths
+Disallow: /api/
+Disallow: /_*
